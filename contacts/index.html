@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+</head>
+<body>
+    <nav>
+            <a href="{{ site.baseurl }}/" target="_blank">Home</a>
+            <a href="{{ site.baseurl }}/Projects.html" target="_blank">Projects</a>
+            <a href="{{ site.baseurl }}/Contacts.html" target="_blank">Contact</a>
+    </nav>
+    <h1> 
+        Contacts
+    </h1>
+
+    <form action="mailto:kgorski@ucsd.edu" method="post" enctype="text/plain">
+        <label for="email">Email Address:</label>
+        <input name="email" type="email" id="email">
+        <label for="subject">Subject:</label>
+        <input type="text" name="subject" id='subject'>
+        <label for="body">Body:</label>
+        <input type="text" name="body" id="body"> 
+        <button>Submit</button>
+    </form>
+    
+</body>
+</html>
