@@ -96,16 +96,16 @@ h1, h2, h3, h4, h5, h6 {
   height: auto;        
 }
 
-cv.h3 {
+section > h3 {
     border-bottom: 2px solid black;
 
 }
-cv.resume-header {
+.resume-header {
     display: grid;
     grid-template-columns: 1fr auto;
     gap: 0 1em;
 
 }
-.cv.date {
+.date {
     font-variant: italic;
 }
