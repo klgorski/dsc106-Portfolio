@@ -32,7 +32,7 @@ a.current {
     border-bottom-style: solid;
     padding-bottom: 5px;
 }
-a:hover {
+.navbar a:hover {
     border-bottom-width: .4em;
     border-bottom-color: var(--color-accent);
     border-bottom-style: solid;
@@ -108,4 +108,11 @@ section > h3 {
 }
 .date {
     font-style: italic;
+}
+.pdfcv {
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    font-size: 2rem;
+
 }
