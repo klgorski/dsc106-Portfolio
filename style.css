@@ -84,3 +84,14 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.1;
     text-wrap: balance;
   }
+
+.container {
+  display: flex;         
+  align-items: center;  
+  gap: 20px;            
+}
+
+.container img {
+  max-width: 300px;      
+  height: auto;        
+}
