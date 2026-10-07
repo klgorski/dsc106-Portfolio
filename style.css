@@ -46,12 +46,9 @@ input, textarea, button {
 .contactform input,
 .contactform textarea,
 .contactform button {
-    display: block;
-    width: 100%;
-    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: subgrid;
+    grid-column: 1 / -1;
+    gap: 1em;
 
-}
-.contactlabel {
-    display: block;
-    margin-block: 3px;
 }
