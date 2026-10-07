@@ -43,12 +43,18 @@ a:hover {
 input, textarea, button {
     font:inherit;
 }
-.contactform input,
-.contactform textarea,
-.contactform button {
+.contactform {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1em;
+}
+
+.contactform label {
     display: grid;
     grid-template-columns: subgrid;
     grid-column: 1 / -1;
-    gap: 1em;
+}
 
+.contactform button {
+    grid-column: 1 / -1;
 }
