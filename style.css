@@ -9,12 +9,13 @@ body {
 }
 .navbar {
     display: flex;
-    margin-bottom: 10 px;
+    margin-bottom: 10px;
     border-bottom-width: 1px;
     border-bottom-color: oklch(80% 3% 200);
     border-bottom-style: solid;
+    padding: .5em
 }
-.a {
+.navbar a {
     flex: 1;
     text-decoration: none;
     color: inherit;
@@ -25,5 +26,5 @@ a.current {
     border-bottom-width: .4em;
     border-bottom-color: oklch(80% 3% 200);
     border-bottom-style: solid;
-    padding-bottom: 5 px;
+    padding-bottom: 5px;
 }
