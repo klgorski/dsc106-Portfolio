@@ -110,9 +110,10 @@ section > h3 {
     font-style: italic;
 }
 .pdfcv {
-    text-align: center;
+    display: block;
+    width: fit-content;
+    margin-inline: auto;
     text-decoration: none;
     color: inherit;
     font-size: 2rem;
-
 }
