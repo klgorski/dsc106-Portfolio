@@ -117,3 +117,5 @@ section > h3 {
     color: inherit;
     font-size: 2rem;
 }
+
+img { max-width: 100%; height: auto; }
