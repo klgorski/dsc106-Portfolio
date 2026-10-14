@@ -42,3 +42,22 @@ for (let p of pages) {
 
   nav.append(a);
 }
+
+document.body.insertAdjacentHTML(
+  'afterbegin',
+  `
+	<label class="color-scheme">
+		Theme:
+		<select>
+			<option value="light dark">Automatic </option>
+            <option value="light">Light </option>
+            <option value="dark">Dark </option>
+		</select>
+	</label>`,
+);
+
+let select =  document.querySelector(selector);
+
+select.addEventListener('input', function (event) {
+  console.log('color scheme changed to', event.target.value);
+});
