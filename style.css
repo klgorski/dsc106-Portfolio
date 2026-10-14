@@ -1,5 +1,6 @@
 :root {
     --color-accent: oklch(45% 50% 155);
+    color-scheme: dark
 }
 body {
   /* Set line height to 1.5 times the font size
@@ -12,10 +13,11 @@ body {
   accent-color: var(--color-accent);
 }
 .navbar {
+    --border-color: oklch(50% 10% 200 / 40%);
     display: flex;
     margin-bottom: 10px;
     border-bottom-width: 1px;
-    border-bottom-color: oklch(80% 3% 200);
+    border-bottom-color: var(--border-color);
     border-bottom-style: solid;
     padding: .5em
 }
@@ -36,7 +38,7 @@ a.current {
     border-bottom-width: .4em;
     border-bottom-color: var(--color-accent);
     border-bottom-style: solid;
-    background-color: oklch(from var(--color-accent) 95% 5% h);
+    background-color: color-mix(in oklch, var(--color-accent), canvas 85%);
     padding-bottom: 5px;
 }
 
