@@ -12,7 +12,8 @@ let pages = [
   { url: '', title: 'Home' },
   { url: 'projects/', title: 'Projects' },
   { url: 'cv/', title: 'CV' },
-  { url: 'contact/', title: 'Contact' }
+  { url: 'contact/', title: 'Contact' },
+  { url: 'https://github.com/klgorski', title: 'GitHub' }
 ];
 
 let nav = document.createElement('nav');
@@ -27,15 +28,17 @@ for (let p of pages) {
     url = BASE_PATH + url;
   }
 
-   let a = document.createElement('a');
-   a.href = url;
-   a.textContent = title;
-   nav.append(a);
+  let a = document.createElement('a');
+  a.href = url;
+  a.textContent = title;
+
+  if (a.host === location.host && a.pathname === location.pathname) {
+    a.classList.add('current');
+  }
+
+  if (a.host !== location.host) {
+    a.target = "_blank";
+  }
+
+  nav.append(a);
 }
-let navLinks = $$("nav a");
-
-let currentLink = navLinks.find(
-  (a) => a.host === location.host && a.pathname === location.pathname,
-);
-
-currentLink?.classList.add('current');
