@@ -16,6 +16,7 @@ let pages = [
 ];
 
 let nav = document.createElement('nav');
+nav.classList.add('navbar');
 document.body.prepend(nav);
 
 for (let p of pages) {
@@ -26,7 +27,10 @@ for (let p of pages) {
     url = BASE_PATH + url;
   }
 
-  nav.insertAdjacentHTML('beforeend', `<a href="${url}">${title}</a>`);
+   let a = document.createElement('a');
+   a.href = url;
+   a.textContent = title;
+   nav.append(a);
 }
 let navLinks = $$("nav a");
 
