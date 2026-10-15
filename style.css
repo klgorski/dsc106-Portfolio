@@ -1,6 +1,6 @@
 :root {
     --color-accent: oklch(45% 50% 155);
-    color-scheme: dark
+    color-scheme: light dark;
 }
 body {
   /* Set line height to 1.5 times the font size
@@ -42,7 +42,7 @@ a.current {
     padding-bottom: 5px;
 }
 
-input, textarea, button {
+input, textarea, button, select {
     font:inherit;
 }
 .contactform {
@@ -99,7 +99,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 section > h3 {
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid oklch(50% 10% 200 / 40%);
 
 }
 .resume-header {
