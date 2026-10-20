@@ -85,8 +85,9 @@ export async function fetchJSON(url) {
   }
 }
 
-export function renderProjects(project, containerElement, headingLevel = 'h2') {
+export function renderProjects(projects, containerElement, headingLevel = 'h2') {
   containerElement.innerHTML = '';
+  for (const project of projects) {
   const article = document.createElement('article');
   article.innerHTML = `
     <${headingLevel}>${project.title}</${headingLevel}>
@@ -95,7 +96,7 @@ export function renderProjects(project, containerElement, headingLevel = 'h2') {
 `;
 
 containerElement.appendChild(article);
-
+  }
 }
 
 export async function fetchGitHubData(username) {
