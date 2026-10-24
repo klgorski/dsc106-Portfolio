@@ -130,9 +130,28 @@ img { max-width: 100%; height: auto; }
 }
 
 #profile-stats dl {
-	display: grid;
-	grid-template-columns: auto;
-	gap: 0.5rem 1rem;
-    max-width: 320px;
-	padding: 1rem 1.25rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(8em, 1fr));
+  gap: 1em;
+  margin: 0;
+}
+
+#profile-stats dl > div {
+  padding: 1em;
+  border: 1px solid oklch(50% 10% 200 / 40%);
+  border-radius: 8px;
+  text-align: center;
+  background-color: color-mix(in oklch, var(--color-accent), canvas 92%);
+}
+
+#profile-stats dt {
+  font-size: 85%;
+  opacity: 0.75;
+}
+
+#profile-stats dd {
+  margin: 0;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--color-accent);
 }
