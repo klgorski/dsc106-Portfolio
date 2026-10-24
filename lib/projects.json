@@ -1,28 +1,33 @@
 [
     {
-        "title": "Lorem ipsum dolor sit.",
+        "title": "Effects of Auditing Regulation on Charity Performance",
+    "year": "2026",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Estimate the effects of audit-requirement notches on Australian charities using dynamic bunching estimation and difference-in-differences designs"
+        },
+    {
+        "title": "Impacts of Monetary Policy on the Economic Activity of Oregon",
+        "year": "2026",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia tempora doloremque repellendus facere dolorem error eaque cumque molestiae mollitia sapiente veritatis et repellat laborum fuga, quaerat exercitationem temporibus aut nulla."
+        "description": "Estimates how the federal funds rate affects Oregon’s real GDP growth, unemployment, and coincident economic activity using structural VARs identified by Cholesky decomposition, with impulse response analysis"
     },
     {
-        "title": "Molestias est amet itaque.",
+        "title": "Corruption Risks in Ethiopia’s Productive Safety Net Programme",
+        "year": "2026",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Qui, eveniet mollitia! Repudiandae, voluptatem omnis. Accusamus sit consequatur nostrum velit laboriosam pariatur nobis aliquid itaque, culpa quisquam laudantium. Numquam provident aliquid atque rerum sint mollitia excepturi blanditiis harum obcaecati."
+        "description": "Rigorously analyzes corruption risks in Ethiopia’s PSNP; examines how a leader may establish an information flow, prioritize among risks using ethical frameworks and practical considerations, and take effective action using significant results from the corruption literature"
     },
     {
-        "title": "Accusamus distinctio obcaecati minus!",
+        "title": "How Much Do Teleworkers Work?",
+        "year": "2026",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Magnam culpa possimus facilis iste aliquam enim aspernatur incidunt earum quas? Porro accusamus voluptates asperiores deleniti tempore dolorum possimus quibusdam corporis vero, eaque aliquam quod recusandae. Error perspiciatis enim iste."
+        "description": "Examines the relationships between teleworking and number of hours worked using CPS data."
     },
     {
-        "title": "Deserunt minus optio quibusdam?",
+        "title": "Socioeconomic Correlations with California’s Assessment of Student Performance and Progress",
+        "year": "2026",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Dolor, recusandae. Doloribus commodi amet qui esse itaque tempore mollitia, officia officiis ex voluptatibus perferendis autem tempora molestias? Sed natus ab assumenda sunt inventore velit architecto quos omnis a cupiditate?"
-    },
-    {
-        "title": "Deserunt, aliquid. Consequuntur, facere?",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Necessitatibus blanditiis totam quis delectus hic neque. Officiis laboriosam nulla exercitationem facere quod libero fugit quae assumenda eum perferendis sed, earum quaerat ipsam aperiam mollitia distinctio tenetur cum sit eaque?"
+        "description": "Math 189 Final Project"
     },
     {
         "title": "Voluptatem laborum minima consectetur.",
