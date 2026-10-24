@@ -128,3 +128,11 @@ img { max-width: 100%; height: auto; }
     right:1rem;
     font-size: 80%;
 }
+
+#profile-stats dl {
+	display: grid;
+	grid-template-columns: auto;
+	gap: 0.5rem 1rem;
+    max-width: 320px;
+	padding: 1rem 1.25rem;
+}
