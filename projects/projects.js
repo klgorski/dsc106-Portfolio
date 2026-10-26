@@ -33,6 +33,7 @@ function renderPieChart(projectsGiven) {
   let newArcData = newSliceGenerator(newData);
   let newArcs = newArcData.map((d) => arcGenerator(d));
 
+  let selectedIndex = -1;
 
   let svg = d3.select('#projects-plot');
   svg.selectAll('path').remove();
@@ -44,6 +45,24 @@ function renderPieChart(projectsGiven) {
       .append('path')
       .attr('d', arc)
       .attr('fill', colors(idx)) // Fill in the attribute for fill color via indexing the colors variable
+      .on('click', () => {
+      selectedIndex = selectedIndex === idx ? -1 : idx;
+
+    svg
+        .selectAll('path')
+        .attr('class', (_, idx) => (
+            idx === selectedIndex ? 'selected' : ''
+            ));
+        
+    legend
+        .selectAll('li')
+        .attr('class', (_, idx) => (
+        idx === selectedIndex ? 'legend-item selected' : 'legend-item'
+        ));
+
+    });
+
+        
 })
     newData.forEach((d, idx) => {
     legend

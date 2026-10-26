@@ -165,6 +165,13 @@ img { max-width: 100%; height: auto; }
   margin-block: 2em;
 
   overflow: visible;
+
+  &:has(path:hover) {
+  path:not(:hover) {
+    transition: 300ms;
+    opacity: 0.5;
+  }
+}
 }
 
 .swatch {
@@ -194,3 +201,11 @@ img { max-width: 100%; height: auto; }
 .container:has(#projects-plot) {
      align-items: center;
    }
+
+.selected {
+  --color: oklch(60% 45% 0) !important;
+
+  &:is(path) {
+    fill: var(--color);
+  }
+}
