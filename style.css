@@ -159,3 +159,10 @@ img { max-width: 100%; height: auto; }
 .project-year {
     font-weight: bold;
 }
+
+#projects-plot {
+  max-width: 20em;
+  margin-block: 2em;
+
+  overflow: visible;
+}
