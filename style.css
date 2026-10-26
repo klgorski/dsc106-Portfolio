@@ -209,3 +209,7 @@ img { max-width: 100%; height: auto; }
     fill: var(--color);
   }
 }
+
+.searchbar {
+    width: 90%;
+}
