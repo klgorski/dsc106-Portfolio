@@ -155,3 +155,7 @@ img { max-width: 100%; height: auto; }
   font-weight: 700;
   color: var(--color-accent);
 }
+
+.project-year {
+    font-weight: bold;
+}
