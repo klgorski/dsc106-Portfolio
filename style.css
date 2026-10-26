@@ -182,7 +182,7 @@ img { max-width: 100%; height: auto; }
     gap: 1em;
     padding: 1em;
     margin: 0;
-
+    border: 1px solid oklch(50% 10% 200 / 40%);
 }
 .legend-item {
     display: flex;
