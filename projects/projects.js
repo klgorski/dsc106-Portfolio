@@ -60,7 +60,17 @@ function renderPieChart(projectsGiven) {
         idx === selectedIndex ? 'legend-item selected' : 'legend-item'
         ));
 
+        if (selectedIndex === -1) {
+            renderProjects(projects, projectsContainer, 'h2');
+            } 
+        else {
+        let selectedYear = newData[selectedIndex].label
+        let filteredProjects = projectsGiven.filter((p) => p.year === selectedYear);
+        renderProjects(filteredProjects, projectsContainer, 'h2');
+        }
+
     });
+
 
         
 })
