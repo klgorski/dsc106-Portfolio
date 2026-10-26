@@ -211,5 +211,7 @@ img { max-width: 100%; height: auto; }
 }
 
 .searchbar {
+    display: block;
+    box-sizing: border-box;
     width: 90%;
 }
