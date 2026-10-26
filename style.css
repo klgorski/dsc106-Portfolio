@@ -190,3 +190,7 @@ img { max-width: 100%; height: auto; }
     align-items: center;
     gap: 0.5em;
 }
+
+.container:has(#projects-plot) {
+     align-items: center;
+   }
