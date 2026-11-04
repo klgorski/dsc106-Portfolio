@@ -1,11 +1,6 @@
 import * as d3 from 'https://cdn.jsdelivr.net/npm/d3@7.9.0/+esm';
 
 
-async function loadData() {
-  const data = await d3.csv('loc.csv');
-  console.log(data);
-  return data;
-}
 
 async function loadData() {
   const data = await d3.csv('loc.csv', (row) => ({
@@ -125,8 +120,16 @@ const sortedCommits = d3.sort(commits, (d) => -d.totalLines);
     height: height - margin.top - margin.bottom,
     };
 
-  xScale.range([usableArea.left, usableArea.right]);
-  yScale.range([usableArea.bottom, usableArea.top]);
+  xScale = d3
+  .scaleTime()
+  .domain(d3.extent(commits, (d) => d.datetime))
+  .range([usableArea.left, usableArea.right])
+  .nice();
+
+yScale = d3
+  .scaleLinear()
+  .domain([0, 24])
+  .range([usableArea.bottom, usableArea.top]);
  
   const xAxis = d3.axisBottom(xScale);
   const yAxis = d3
