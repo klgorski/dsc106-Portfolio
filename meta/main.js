@@ -186,6 +186,7 @@ const gridlines = svg
 
   // Create gridlines as an axis with no labels and full-width ticks
 gridlines.call(d3.axisLeft(yScale).tickFormat('').tickSize(-usableArea.width));
+createBrushSelector(svg);
 }
 
 function renderTooltipContent(commit) {
@@ -240,7 +241,7 @@ function brushed(event) {
   renderLanguageBreakdown(selection);
 }
 
-function isCommitSelected(commit) { if (!selection) { return false; } const [x0, x1] = selection.map((d) => d[0]); const [y0, y1] = selection.map((d) => d[1]); const x = xScale(commit.datetime); const y = yScale(commit.hourFrac); return x >= x0 && x <= x1 && y >= y0 && y <= y1; } 
+function isCommitSelected(selection, commit) { if (!selection) { return false; } const [x0, x1] = selection.map((d) => d[0]); const [y0, y1] = selection.map((d) => d[1]); const x = xScale(commit.datetime); const y = yScale(commit.hourFrac); return x >= x0 && x <= x1 && y >= y0 && y <= y1; } 
 
 function renderLanguageBreakdown(selection) {
   const selectedCommits = selection
