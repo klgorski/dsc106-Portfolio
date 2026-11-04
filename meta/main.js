@@ -199,12 +199,6 @@ function renderTooltipContent(commit) {
   date.textContent = commit.datetime?.toLocaleString('en', {
     dateStyle: 'full',
   });
-
-  svg.call(d3.brush().on('start brush end', brushed));
-
-
-  // Raise dots and everything after overlay
-  svg.selectAll('.dots, .overlay ~ *').raise();
 }
 
 function updateTooltipVisibility(isVisible) {
@@ -219,7 +213,8 @@ function updateTooltipPosition(event) {
 }
 
 function createBrushSelector(svg) {
-  svg.call(d3.brush());
+  svg.call(d3.brush().on('start brush end', brushed));
+  svg.selectAll('.dots, .overlay ~ *').raise();
 }
 
 
