@@ -317,3 +317,31 @@ circle:hover {
   circle.selected {
     fill: #ff6b6b;
   }
+
+  #language-breakdown {
+  display: grid;
+  grid-template-rows: auto auto;   /* language in row 1, count in row 2 */
+  grid-auto-flow: column;          /* each language becomes a column */
+  grid-auto-columns: 1fr;
+  gap: 0.25em 1em;
+  margin-block: 1em;
+}
+
+#language-breakdown dt,
+#language-breakdown dd {
+  margin: 0;
+  text-align: center;
+}
+
+#language-breakdown dt {
+  grid-row: 1;
+  font-size: 75%;
+  text-transform: uppercase;
+  color: color-mix(in oklch, currentColor, transparent 35%);
+}
+
+#language-breakdown dd {
+  grid-row: 2;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
