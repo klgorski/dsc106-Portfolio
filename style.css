@@ -248,41 +248,30 @@ dl.info dd {
 #stats dl {
   display: grid;
   grid-template-rows: auto auto;   /* labels in row 1, values in row 2 */
-  grid-auto-flow: column;          /* each dt/dd pair becomes a column */
+  grid-auto-flow: column;
   grid-auto-columns: 1fr;
-  gap: 0 1em;                      /* no gap between rows, so the halves join */
+  gap: 0.25em 1em;
   margin: 0;
 }
 
 #stats dt,
 #stats dd {
   margin: 0;
-  padding: 0.5em 1em;
   text-align: center;
-  background-color: color-mix(in oklch, var(--color-accent), canvas 92%);
-  border: 1px solid oklch(50% 10% 200 / 40%);
 }
 
-/* Top half of the card */
 #stats dt {
   grid-row: 1;
-  padding-top: 1em;
-  border-bottom: none;
-  border-radius: 8px 8px 0 0;
-  font-size: 85%;
-  opacity: 0.75;
+  font-size: 75%;
+  text-transform: uppercase;
+  color: color-mix(in oklch, currentColor, transparent 35%);
 }
 
-/* Bottom half of the card */
 #stats dd {
   grid-row: 2;
-  padding-bottom: 1em;
-  border-top: none;
-  border-radius: 0 0 8px 8px;
-  font-size: 1.75rem;
+  font-size: 1.25rem;
   font-weight: 700;
-  color: var(--color-accent);
-  overflow-wrap: anywhere;
+  overflow-wrap: anywhere;   /* long file names wrap instead of overflowing */
 }
 .tooltip {
   position: fixed;
