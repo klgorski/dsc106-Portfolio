@@ -215,5 +215,7 @@ let commits = processCommits(data);
 
 renderCommitInfo(data, commits);
 
+renderScatterPlot(data,commits);
+
 
 
