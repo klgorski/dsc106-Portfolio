@@ -23,7 +23,7 @@ function processCommits(data) {
       let { author, date, time, timezone, datetime } = first;
       let ret = {
         id: commit,
-        url: 'https://github.com/vis-society/lab-7/commit/' + commit,
+        url: 'https://github.com/klgorski/dsc106-Portfolio/commit/' + commit,
         author,
         date,
         time,
@@ -136,6 +136,11 @@ yScale = d3
   .axisLeft(yScale)
   .tickFormat((d) => String(d % 24).padStart(2, '0') + ':00');
 
+const gridlines = svg
+  .append('g')
+  .attr('class', 'gridlines')
+  .attr('transform', `translate(${usableArea.left}, 0)`);
+
   // Add X axis
 svg
   .append('g')
@@ -179,10 +184,7 @@ dots
   });
 
 
-const gridlines = svg
-  .append('g')
-  .attr('class', 'gridlines')
-  .attr('transform', `translate(${usableArea.left}, 0)`);
+
 
   // Create gridlines as an axis with no labels and full-width ticks
 gridlines.call(d3.axisLeft(yScale).tickFormat('').tickSize(-usableArea.width));
