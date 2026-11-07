@@ -76,9 +76,6 @@ function renderCommitInfo(data, commits) {
   dl.append('dt').text('Total commits');
   dl.append('dd').text(commits.length);
 
-  dl.append('dt').text('Total commits');
-  dl.append('dd').text(commits.length);
-
   dl.append('dt').text('Number of files in the codebase');
   dl.append('dd').text(numFiles);
 
