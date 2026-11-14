@@ -34,7 +34,7 @@
         "year": "2026",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Vizualizes Boston and Cambridge Bike Traffic",
-        "link" : "https://klgorski.github.io/Bike-Traffic/"
+        "url": "https://klgorski.github.io/Bike-Traffic/"
     },
     {
         "title": "Ducimus sunt ipsam maiores.",
