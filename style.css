@@ -354,3 +354,18 @@ circle:hover {
 .gridlines .domain {
   display: none;
 }
+
+#time-filter label {
+  display: flex;
+  flex: 1;
+  align-items: baseline;
+  gap: 1em;
+}
+
+#time-filter input[type="range"] {
+  flex: 1;
+}
+
+#commit-time {
+  margin-left: auto;
+}
